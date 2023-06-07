@@ -1,0 +1,29 @@
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  /* Style the label as the custom checkbox */
+  label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+  
+  /* Create the checkbox shape */
+  label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #999;
+  }
+  
+  /* Style the checkbox when checked */
+  input[type="checkbox"]:checked + label:before {
+    background-color: #00ff00; /* Green color */
+  }
+  
